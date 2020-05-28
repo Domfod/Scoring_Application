@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:id="@+id/leftSide"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SERVE"
+            android:layout_centerHorizontal="true"
+            android:elevation="100dp"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/leftServe"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="70sp"
+            android:elevation="100dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/leftScore"
+            android:textColor="#ffffff"></TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="200sp"
+            android:id="@+id/leftBut"
+            android:background="#ff3339"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="200sp"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:id="@+id/leftTextScore"
+            android:textColor="#ffffff"></TextView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:id="@+id/middleButtons"
+        android:background="#8D8A8A"
+        android:orientation="vertical">
+<!--
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="reset"
+            android:id="@+id/resetButton"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Switch"
+            android:id="@+id/switchButton"></Button>
+-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:id="@+id/right_side">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SERVE"
+            android:layout_centerHorizontal="true"
+            android:elevation="100dp"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/rightServe"></TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="200sp"
+            android:id="@+id/rightBut"
+            android:elevation="50dp"
+            android:background="#000000"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="0"
+            android:textSize="70sp"
+            android:elevation="100dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/rightScore"
+            android:textColor="#ffffff"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="200sp"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/rightTextScore"></TextView>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/settingsPopUp"
+            android:onClick="showPopup"
+            android:background="#000000"
+            android:elevation="100dp"
+            android:src="@drawable/vert_dots"></ImageButton>
+
+    </RelativeLayout>
+
+
+    
+</LinearLayout>

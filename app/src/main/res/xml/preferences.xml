@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Scoring Settings">
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pointInterval"
+            android:entryValues="@array/updatePointInerval"
+            android:key="point_interval"
+            android:title="Serve Intervals"
+            android:summary="%s between serves"/>
+        <ListPreference
+            android:defaultValue="11"
+            android:entries="@array/gameLen"
+            android:entryValues="@array/updateGameLen"
+            android:key="game_len"
+            android:title="Game Length"
+            android:summary="%s"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="2_point_diff_y/n"
+            android:title="Two clear points to win" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="switch_serve"
+            android:title="Switch serve side on game win" />
+    </PreferenceCategory>
+</PreferenceScreen>

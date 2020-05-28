@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pointInterval">
+        <item>2 Points</item>
+        <item>5 Points</item>
+    </string-array>
+    <string-array name="updatePointInerval">
+        <item>2</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="gameLen">
+        <item>11 Point Game</item>
+        <item>21 Point Game</item>
+    </string-array>
+    <string-array name="updateGameLen">
+        <item>11</item>
+        <item>21</item>
+    </string-array>
+</resources>

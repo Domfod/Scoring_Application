@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".savedGames">
+
+    <LinearLayout
+        android:id="@+id/linLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left Name"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/lScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left Score"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/rName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Right Name"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/rScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Right Score"
+                android:background="@color/colorAccent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTES"
+        android:layout_below="@id/linLayouts"/>
+</RelativeLayout>
